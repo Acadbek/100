@@ -1,5 +1,6 @@
 'use client';
 
+import { links } from '@/contants';
 import Link from 'next/link'
 import { usePathname } from "next/navigation";
 
@@ -11,9 +12,6 @@ export default function Nav() {
       ? "text-white"
       : "text-gray-600";
 
-  const links = [
-    'Air Friction', 'Avalanche', 'Ball pool', 'Bridge', 'Car', 'Catapult'
-  ]
 
   const format = (str: string) => str.split(' ').join('-').toLowerCase()
 
