@@ -25,6 +25,7 @@ export default function Avalanche() {
 
     const stack = Composites.stack(20, 20, 20, 5, 0, 0, (x: number, y: number) => {
       return Bodies.circle(x, y, Common.random(10, 20), { friction: 0.00001, restitution: 0.5, density: 0.001 })
+      // return Bodies.polygon(x, y, Math.round(Common.random(3, 8)), Common.random(10, 20), { friction: 0.00001, restitution: 0.5, density: 0.001 })
     })
 
     Composite.add(world, stack);

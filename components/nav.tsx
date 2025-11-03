@@ -21,7 +21,7 @@ export default function Nav() {
         <Link
           key={id}
           href={format(item)}
-          className={`${linkStyle(`/${format(item)}`)} uppercase tracking-wide ${id != 0 && id != 1 ? 'pointer-events-none' : ''}`}>
+          className={`${linkStyle(`/${format(item)}`)} uppercase tracking-wide`}>
           {item}
         </Link>
       ))}
